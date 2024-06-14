@@ -25,6 +25,7 @@ typedef int			t_bool;
 # define FALSE 0
 
 // new functions
+char				*ft_ullitoa(unsigned long long int n);
 void 				ft_str2digit(uint64_t n, uint8_t digits[], size_t *length_out);
 void				ft_bin2ascii(char *s);
 char				*ft_string2bin(char *s, size_t i, size_t j);

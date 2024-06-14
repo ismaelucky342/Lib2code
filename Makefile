@@ -78,8 +78,8 @@ SRC		=	$(SRC_DIR)/ft_printf.c			\
 			$(SRC_DIR)/ft_char2bin.c	\
 			$(SRC_DIR)/ft_string2bin.c	\
 			$(SRC_DIR)/ft_bin2ascii.c	\
-			$(SRC_DIR)/ft_str2digit.c
-
+			$(SRC_DIR)/ft_str2digit.c	\
+			$(SRC_DIR)/ft_ullitoa.c 
 OBJ		=	${SRC:.c=.o}
 
 CC		=	gcc
