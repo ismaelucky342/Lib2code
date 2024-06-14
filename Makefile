@@ -77,7 +77,8 @@ SRC		=	$(SRC_DIR)/ft_printf.c			\
 			$(SRC_DIR)/ft_addFS.c \
 			$(SRC_DIR)/ft_char2bin.c	\
 			$(SRC_DIR)/ft_string2bin.c	\
-			$(SRC_DIR)/ft_bin2ascii.c
+			$(SRC_DIR)/ft_bin2ascii.c	\
+			$(SRC_DIR)/ft_str2digit.c
 
 OBJ		=	${SRC:.c=.o}
 

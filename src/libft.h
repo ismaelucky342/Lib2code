@@ -25,6 +25,7 @@ typedef int			t_bool;
 # define FALSE 0
 
 // new functions
+void 				ft_str2digit(uint64_t n, uint8_t digits[], size_t *length_out);
 void				ft_bin2ascii(char *s);
 char				*ft_string2bin(char *s, size_t i, size_t j);
 void				ft_char2bin(unsigned char c, char *ret, size_t *j);
