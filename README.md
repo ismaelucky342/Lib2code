@@ -81,6 +81,9 @@ Lib2code is a library of C functions, created from my libft that contains a coll
 # Extra
 
 The expansion and use of this library is essential throughout the 42 course, the design of the common core makes previous projects the basis of the following ones, which is why this will be my main "toolbox" during that period.
+
 -Born2code
+
+
 ![42madrid](https://github.com/ismaelucky342/Born2code/assets/153450550/3a377f34-9156-4eff-b04b-71c4b128523e)
 
