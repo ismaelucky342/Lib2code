@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 
 static int	ft_length_hex(unsigned int num);
 static void	ft_search_hex(unsigned int num, const char word);

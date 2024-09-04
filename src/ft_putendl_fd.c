@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

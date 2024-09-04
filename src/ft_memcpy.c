@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 //#include <stdio.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
@@ -31,9 +31,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	char	destino[] = "hola";
 	char	origen[] = "mundo";
-	size_t	t = 5; 
+	size_t	t = 5;
 
 	void	*resultado = ft_memcpy(destino, origen, t);
-	printf("la cadena resultante es: %s", resultado); 
-	return 0; 
+	printf("la cadena resultante es: %s", resultado);
+	return (0);
 }*/

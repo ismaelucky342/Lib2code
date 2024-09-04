@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 
 static int	ft_format(va_list argument, const char word);
 
@@ -59,7 +59,7 @@ static int	ft_format(va_list argument, const char word)
 		size += ft_print_char(word);
 	return (size);
 }
-/*#include "libft.h"
+/*#include "../includes/lib2code.h"
 
 
 int main() {
@@ -81,5 +81,5 @@ int main() {
     ft_printf("Hexadecimal (mayúsculas): %X\n", hexadecimal);
     ft_printf("Símbolo del porcentaje: %%\n");
 
-    return 0;
+    return (0);
 }*/

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -30,9 +30,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 /*int		main(){
 	const char *string = "patata";
 	char	car = 'a';
-	size_t 	inicio = 6; 
+	size_t 	inicio = 6;
 
 	void *resultado = ft_memchr(string, car, inicio);
 	printf("%s", resultado);
-	return 0; 
+	return (0);
 }*/

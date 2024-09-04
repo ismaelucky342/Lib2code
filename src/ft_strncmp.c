@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 //#include <stdio.h>
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
@@ -32,5 +32,5 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	
 	int		resultado = ft_strncmp(string1,string2, 5);
 	printf("el resultado es: %d\n", resultado);
-	return 0; 
+	return (0);
 }*/

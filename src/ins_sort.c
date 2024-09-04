@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   insertion_sort.c                                   :+:      :+:    :+:   */
+/*   ins_sort.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/09 09:09:28 by asioud            #+#    #+#             */
-/*   Updated: 2024/05/24 12:24:48 by ismherna         ###   ########.fr       */
+/*   Created: 2024/09/04 13:05:07 by ismherna          #+#    #+#             */
+/*   Updated: 2024/09/04 13:05:07 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 
 // Insertion Sort Function
 void	ins_sort(int array[], int n)
@@ -40,7 +40,7 @@ void	ins_sort(int array[], int n)
 // {
 // 	int	i;
 
-// 	for (i = 0; i < n; i++)
+// 	for (i = 0;i < n;i++)
 // 		printf("%d ", array[i]);
 // }
 // // Main Function

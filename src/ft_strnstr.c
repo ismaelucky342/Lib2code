@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 //#include <stdio.h>
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -35,12 +35,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 }
 /*int		main()
 {
-	const	char *cadena = "hola mundo "; 
-	const 	char *subcadena = "mundo"; 
+	const	char *cadena = "hola mundo ";
+	const 	char *subcadena = "mundo";
 
-	size_t lon = 11; 
+	size_t lon = 11;
 	char *resultado = ft_strnstr(cadena, subcadena, 11);
 	printf("la subcadena %s, fue encontrada en: %s", subcadena, resultado);
 
-	return 0;
+	return (0);
 }*/

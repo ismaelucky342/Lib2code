@@ -9,24 +9,24 @@
 /*   Updated: 2024/02/12 11:51:58 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/lib2code.h"
 //#include<stdio.h>
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstnew(void *data)
 {
-	t_list	*new_node;
+	t_list	*ft_ast_new_node;
 
-	new_node = (t_list *)malloc(sizeof(t_list));
-	if (!new_node)
+	ft_ast_new_node = (t_list *)malloc(sizeof(t_list));
+	if (!ft_ast_new_node)
 		return (NULL);
-	new_node->content = content;
-	new_node->next = (NULL);
-	return (new_node);
+	ft_ast_new_node->data = data;
+	ft_ast_new_node->next = (NULL);
+	return (ft_ast_new_node);
 }
 /*int		main(){
 	int data = 42;
-	t_list *nodo = ft_lstnew(&data); 
+	t_list *nodo = ft_lstnew(&data);
 
-	printf("nuevo nodo %d\n", *((int *)nodo->content));
+	printf("nuevo nodo %d\n", *((int *)nodo->data));
 	free(nodo);
-	return 0; 
+	return (0);
 }*/

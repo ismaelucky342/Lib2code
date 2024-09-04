@@ -6,18 +6,22 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 00:17:02 by asioud            #+#    #+#             */
-/*   Updated: 2024/05/24 12:33:10 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/07/21 13:23:41 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/lib2code.h"
 
-int	ft_index(int n, int *arr)
+int	ft_index(char *str, char c)
 {
-	int	i;
+	int	index;
 
-	i = 0;
-	while (arr[i] != n)
-		i++;
-	return (i);
+	index = 0;
+	while (str[index])
+	{
+		if (str[index] == c)
+			return (index);
+		index++;
+	}
+	return (-1);
 }

@@ -9,7 +9,7 @@
 /*   Updated: 2024/02/13 03:10:12 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include "../includes/lib2code.h"
 //#include <stdio.h>
 int	ft_lstsize(t_list *lst)
 {
@@ -41,5 +41,5 @@ int	ft_lstsize(t_list *lst)
     free(node2);
     free(node3);
 
-    return 0;
+    return (0);
 }*/
