@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 int64_t	ft_atoll(const char *str)
 {

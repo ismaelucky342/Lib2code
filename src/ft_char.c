@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 int	ft_print_char(int character)
 {
@@ -18,5 +18,5 @@ int	ft_print_char(int character)
 	{
 		return (-1);
 	}
-	return (1);
+	return (KO);
 }

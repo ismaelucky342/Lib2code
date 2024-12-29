@@ -6,34 +6,36 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 13:01:57 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/22 18:15:54 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
-void		ft_del_node_np(t_pnp **begin_list, t_pnp *del,
-	void (*f)(t_pnp *curr))
+void	ft_del_node_np(t_pnp **lst, t_pnp *del, void (*f)(t_pnp *curr))
 {
 	t_pnp	*tmp;
 
-	tmp = *begin_list;
-	if (tmp == del)
+	if (*lst == NULL || del == NULL)
+		return ;
+	if (*lst == del)
 	{
-		*begin_list = (*begin_list)->next;
-		if (*begin_list)
-			(*begin_list)->prev = NULL;
+		*lst = (*lst)->next;
+		if (*lst)
+			(*lst)->prev = NULL;
 	}
 	else
 	{
-		while (tmp->next != del)
+		tmp = *lst;
+		while (tmp && tmp->next != del)
 			tmp = tmp->next;
-		if (tmp->next == NULL)
+		if (tmp == NULL)
 			return ;
 		tmp->next = del->next;
-		tmp->next->prev = tmp;
+		if (del->next)
+			del->next->prev = tmp;
 	}
 	if (f)
 		f(del);
-	mfree((void **)&del);
+	free(del);
 }

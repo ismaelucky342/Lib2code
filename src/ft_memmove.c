@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 //#include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -44,5 +44,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	void	*resultado = ft_memmove(destino, origen, t);
 	printf("la cadena resultante es: %s", (char *)resultado);
-	return (0);
+	return (OK);
 }*/

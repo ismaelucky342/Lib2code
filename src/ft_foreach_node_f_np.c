@@ -6,19 +6,18 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 13:01:37 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/04 13:01:38 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include "../includes/lib2code.h"
-
-void		ft_foreach_node_f_np(t_pnp **begin_list, int (*f)(t_pnp *curr))
+void	ft_foreach_node_f_np(t_pnp **lst, int (*f)(t_pnp *curr))
 {
 	t_pnp	*tmp;
 	t_pnp	*tmp2;
 
-	tmp = *begin_list;
+	tmp = *lst;
 	while (tmp->next)
 	{
 		tmp2 = tmp->next;

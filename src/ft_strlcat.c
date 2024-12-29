@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 //#include <stdio.h>
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -55,5 +55,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}else{
 		printf("ERROR CADENA NULA");
 	}
-	return (0);
+	return (OK);
 }*/

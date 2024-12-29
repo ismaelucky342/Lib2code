@@ -6,22 +6,31 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 13:02:05 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/22 18:15:50 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
-void		ft_del_node_end_np(t_pnp **begin_list, void (*f)(t_pnp *curr))
+void	ft_del_node_end_np(t_pnp **lst, void (*f)(t_pnp *curr))
 {
 	t_pnp	*tmp;
+	t_pnp	*prev;
 
-	tmp = *begin_list;
+	tmp = *lst;
+	if (tmp == NULL)
+		return ;
 	while (tmp->next != NULL)
 		tmp = tmp->next;
-	if (tmp != *begin_list)
-		tmp->prev->next = NULL;
+	if (tmp != *lst)
+	{
+		prev = tmp->prev;
+		if (prev)
+			prev->next = NULL;
+	}
+	else
+		*lst = NULL;
 	if (f)
 		f(tmp);
-	mfree((void **)&tmp);
+	free(tmp);
 }

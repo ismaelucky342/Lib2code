@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -20,7 +20,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 	while (lst != NULL)
 	{
-		f(lst->data);
+		f(lst->content);
 		lst = lst->next;
 	}
 }

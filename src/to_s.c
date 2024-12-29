@@ -6,13 +6,13 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/07 12:48:23 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
-int			to_s(char *buf, int *dir, va_list ap)
+int	to_s(char *buf, int *dir, va_list ap)
 {
 	char	*str;
 	char	*s;
@@ -21,7 +21,8 @@ int			to_s(char *buf, int *dir, va_list ap)
 	int		i;
 
 	s = va_arg(ap, char *);
-	s == NULL ? s = NULLSTR : 0;
+	if (s == NULL)
+		s = NULLSTR;
 	len = ft_strnlen(s, dir[PF_PREC]);
 	fill = ' ';
 	if (dir[PF_ZERO] == 1)
@@ -29,8 +30,10 @@ int			to_s(char *buf, int *dir, va_list ap)
 	str = buf;
 	i = -1;
 	if (dir[PF_LEFT] != 1)
+	{
 		while (len < dir[PF_WIDTH]--)
 			*str++ = fill;
+	}
 	while (++i < len)
 		*str++ = *s++;
 	while (len < dir[PF_WIDTH]--)

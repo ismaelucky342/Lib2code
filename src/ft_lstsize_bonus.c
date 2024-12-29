@@ -9,14 +9,15 @@
 /*   Updated: 2024/02/13 03:10:12 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../includes/lib2code.h"
-//#include <stdio.h>
+
+#include "libft.h"
+
 int	ft_lstsize(t_list *lst)
 {
 	int	count;
 
 	if (!lst)
-		return (0);
+		return (OK);
 	count = (0);
 	while (lst)
 	{
@@ -25,7 +26,9 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
-/*int main() {
+
+/*#include <stdio.h>
+int	main() {
     t_list *node1 = ft_lstnew("Node 1");
     t_list *node2 = ft_lstnew("Node 2");
     t_list *node3 = ft_lstnew("Node 3");
@@ -41,5 +44,5 @@ int	ft_lstsize(t_list *lst)
     free(node2);
     free(node3);
 
-    return (0);
+    return (OK);
 }*/

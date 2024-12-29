@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 int	ft_ishexdigit(int c)
 {
@@ -20,5 +20,5 @@ int	ft_ishexdigit(int c)
 	if (c >= 'A' && c <= 'F')
 		return (c);
 	else
-		return (0);
+		return (OK);
 }

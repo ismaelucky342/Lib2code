@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 static int	ft_format(va_list argument, const char word);
 
@@ -59,10 +59,9 @@ static int	ft_format(va_list argument, const char word)
 		size += ft_print_char(word);
 	return (size);
 }
-/*#include "../includes/lib2code.h"
+/*#include "libft.h"
 
-
-int main() {
+int	main() {
     char caracter = 'A';
     char cadena[] = "Hola, mundo!";
     void *puntero = (void *)0x12345678;
@@ -81,5 +80,5 @@ int main() {
     ft_printf("Hexadecimal (mayúsculas): %X\n", hexadecimal);
     ft_printf("Símbolo del porcentaje: %%\n");
 
-    return (0);
+    return (OK);
 }*/

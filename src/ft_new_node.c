@@ -6,22 +6,23 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 13:00:33 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/10 12:14:49 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-#include "../includes/lib2code.h"
+void	*initialize_node(size_t size)
+{
+	return (malloc(size));
+}
 
-void		*ft_new_node(
-	size_t size, void (*f)(void *, int, va_list), int nb_arg, ...)
+void	process_node(void *new, void (*f)(void *, int, va_list), int nb_arg,
+		...)
 {
 	va_list	ap;
-	void	*new;
 
-	new = mmalloc(size);
 	va_start(ap, nb_arg);
 	f(new, nb_arg, ap);
 	va_end(ap);
-	return (new);
 }

@@ -6,23 +6,23 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 13:02:13 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/22 18:20:02 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
-void		ft_del_list_np(t_pnp **begin_list)
+void	ft_del_list_np(t_pnp **lst)
 {
 	t_pnp	*tmp;
 	t_pnp	*tmp2;
 
-	tmp = *begin_list;
+	tmp = *lst;
 	while (tmp)
 	{
 		tmp2 = tmp->next;
-		mfree((void **)&tmp);
+		free(tmp);
 		tmp = tmp2;
 	}
-	*begin_list = NULL;
+	*lst = NULL;
 }

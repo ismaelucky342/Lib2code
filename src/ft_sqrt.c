@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 int	ft_sqrt(int number)
 {
 	int	i;
 
 	if (number < 4)
-		return (1);
+		return (KO);
 	i = 2;
 	while (i * i < number)
 		i++;

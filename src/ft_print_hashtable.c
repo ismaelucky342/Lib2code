@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 void	ft_print_hashtable(t_hashtable *hashtable, char *delimeter)
 {

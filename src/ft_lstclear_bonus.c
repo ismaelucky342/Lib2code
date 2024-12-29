@@ -9,7 +9,8 @@
 /*   Updated: 2024/02/12 11:51:58 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../includes/lib2code.h"
+
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del) (void *))
 {
@@ -22,7 +23,7 @@ void	ft_lstclear(t_list **lst, void (*del) (void *))
 		while (current)
 		{
 			next = current->next;
-			del(current->data);
+			del(current->content);
 			free(current);
 			current = next;
 		}

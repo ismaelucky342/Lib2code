@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/04 13:05:37 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:05:37 by ismherna         ###   ########.fr       */
+/*   Created: 2024/09/22 18:14:46 by ismherna          #+#    #+#             */
+/*   Updated: 2024/09/22 18:14:46 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 t_hashtable	*ft_add_element(t_hashtable *ht, char *key, char *value)
 {
-	int	hash;
+	int		hash;
 
 	hash = ft_monkey_hash(key, ht->length);
 	while (ht->element_array[hash])

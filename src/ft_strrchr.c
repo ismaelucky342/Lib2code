@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 //#include <stdio.h>
 char	*ft_strrchr(const char *str, int c)
 {
@@ -40,5 +40,5 @@ char	*ft_strrchr(const char *str, int c)
 	}else {
 		printf("ERROR");
 	}
-	return (0);
+	return (OK);
 }*/

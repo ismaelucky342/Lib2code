@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 void	ft_char2bin(unsigned char c, char *ret, size_t *j)
 {

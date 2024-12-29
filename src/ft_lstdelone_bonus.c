@@ -9,13 +9,14 @@
 /*   Updated: 2024/02/12 11:51:58 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "../includes/lib2code.h"
+
+#include "libft.h"
 
 void	ft_lstdelone(t_list *list, void (*del)(void *))
 {
 	if (list && del)
 	{
-		del(list->data);
+		del(list->content);
 		free(list);
 	}
 }

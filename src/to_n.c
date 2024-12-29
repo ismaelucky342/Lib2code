@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   to_n.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ismherna <ismherna@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 10:57:52 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/02/15 10:56:39 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 void	to_n(int printed, int *dir, va_list ap)
 {

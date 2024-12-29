@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 //#include <stdio.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
@@ -37,5 +37,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	printf("La cadena original es: %s\n",string1);
 	ft_striteri(string1, &printchari);
 
-	return (0);
+	return (OK);
 }*/

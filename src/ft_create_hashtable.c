@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/04 13:02:24 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:02:24 by ismherna         ###   ########.fr       */
+/*   Created: 2024/09/16 13:44:18 by ismherna          #+#    #+#             */
+/*   Updated: 2024/09/16 13:44:18 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 t_hashtable	*ft_create_hashtable(int length)
 {

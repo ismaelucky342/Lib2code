@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
 // Insertion Sort Function
 void	ins_sort(int array[], int n)
@@ -50,5 +50,5 @@ void	ins_sort(int array[], int n)
 // 	int n = sizeof(array) / sizeof(array[0]);
 // 	insertionSort(array, n);
 // 	printArray(array, n);
-// 	return (0);
+// 	return (OK);
 // }

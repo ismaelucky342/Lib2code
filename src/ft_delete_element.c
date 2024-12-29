@@ -5,16 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/04 13:01:45 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:01:45 by ismherna         ###   ########.fr       */
+/*   Created: 2024/09/22 18:23:31 by ismherna          #+#    #+#             */
+/*   Updated: 2024/09/22 18:23:31 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-
-#include "../includes/lib2code.h"
-
-t_hashtable	*ft_delete_element(t_hashtable *ht, char *key)
+int	ft_delete_element(t_hashtable *ht, char *key)
 {
 	int			hash_index;
 	t_element	**elem_arr;
@@ -27,9 +25,9 @@ t_hashtable	*ft_delete_element(t_hashtable *ht, char *key)
 		{
 			ft_free_element(elem_arr[hash_index]);
 			elem_arr[hash_index] = NULL;
-			return (ht);
+			return (KO);
 		}
 		hash_index = (hash_index + 1) % ht->length;
 	}
-	return (ht);
+	return (OK);
 }

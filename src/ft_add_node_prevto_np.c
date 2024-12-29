@@ -6,14 +6,13 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/04 13:06:09 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/09/04 13:06:11 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
-
-void		ft_add_node_prevto_np(t_pnp **start, t_pnp *next, t_pnp *new)
+void	ft_add_node_prevto_np(t_pnp **start, t_pnp *next, t_pnp *new)
 {
 	if (!new && !next && !(*start))
 		return ;

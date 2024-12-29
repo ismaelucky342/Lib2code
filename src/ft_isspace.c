@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 
-int	ft_isspace(int c)
+int	ft_isspace(char c)
 {
 	if ((c >= 9 && c <= 13) || c == ' ')
 		return (c);
-	return (0);
+	return (OK);
 }

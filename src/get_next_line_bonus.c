@@ -6,11 +6,11 @@
 /*   By: ismherna <ismherna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 17:25:43 by ismherna          #+#    #+#             */
-/*   Updated: 2024/09/04 13:19:28 by ismherna         ###   ########.fr       */
+/*   Updated: 2024/03/12 14:45:05 by ismherna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/lib2code.h"
+#include "libft.h"
 #include <limits.h>
 
 char	*ft_strchr_gnl(char *str, int c)
@@ -31,27 +31,27 @@ char	*ft_strchr_gnl(char *str, int c)
 	return (NULL);
 }
 
-static char	*ft_set_line(char *line_buffer)
+static char	*ft_set_line(char *line_buf)
 {
 	char		*left_c;
 	ssize_t		i;
 
 	i = 0;
-	while (line_buffer[i] != '\n' && line_buffer[i] != '\0')
+	while (line_buf[i] != '\n' && line_buf[i] != '\0')
 		i++;
-	if (line_buffer[i] == 0 || line_buffer[1] == 0)
+	if (line_buf[i] == 0 || line_buf[1] == 0)
 		return (NULL);
-	left_c = ft_substr_gnl(line_buffer, i + 1, ft_strlen_gnl(line_buffer) - i);
+	left_c = ft_substr_gnl(line_buf, i + 1, ft_strlen_gnl(line_buf) - i);
 	if (*left_c == 0)
 	{
 		free(left_c);
 		left_c = NULL;
 	}
-	line_buffer[i + 1] = 0;
+	line_buf[i + 1] = 0;
 	return (left_c);
 }
 
-static char	*ft_fill_line_buffer(int fd, char *left_c, char *buffer)
+static char	*ft_fill_line_buf(int fd, char *left_c, char *buffer)
 {
 	ssize_t	b_read;
 	char	*tmp;
@@ -97,7 +97,7 @@ char	*get_next_line_bonus(int fd)
 	}
 	if (!buffer)
 		return (NULL);
-	line = ft_fill_line_buffer(fd, left_c[fd], buffer);
+	line = ft_fill_line_buf(fd, left_c[fd], buffer);
 	free(buffer);
 	buffer = NULL;
 	if (!line)
