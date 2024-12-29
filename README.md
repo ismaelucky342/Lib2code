@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/a315380f-a549-42a7-8613-d39225d7d185)
+
 # Libft
 
 ft_libft is a comprehensive library that provides a wide range of utility functions and data structures to facilitate various programming tasks. It includes implementations for string manipulation, memory management, data structures such as linked lists and hash tables, and specialized functions for handling formatted output and input parsing. This library is designed to be a useful tool for developers looking to optimize their coding process and improve efficiency.
